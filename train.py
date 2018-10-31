@@ -19,7 +19,7 @@ set_random_seed(0)
 def build_model():
     encode_dim = 50
 
-    # Load word embedding
+    # Load word embedding, run word_embedding.py to generate this file
     with open(model_dir / 'wid_embedding.pkl', 'rb') as f:
         wid_embedding = pickle.load(f)
     n_words, embedding_dim = wid_embedding.shape  # (482089, 300)
